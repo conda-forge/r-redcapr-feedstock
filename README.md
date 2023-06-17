@@ -1,11 +1,11 @@
-About r-redcapr
-===============
+About r-redcapr-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-redcapr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://ouhscbbmc.github.io/REDCapR/, https://github.com/OuhscBbmc/REDCapR, https://www.ouhsc.edu/bbmc/, https://project-redcap.org
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-redcapr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Encapsulates functions to streamline calls from R to the REDCap API.  REDCap (Research Electronic Data CAPture) is a web application for building and managing online surveys and databases developed at Vanderbilt University.  The Application Programming Interface (API) offers an avenue to access and modify data programmatically, improving the capacity for literate and reproducible programming.
 

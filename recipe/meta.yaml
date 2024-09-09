@@ -1,4 +1,4 @@
-{% set version = '1.1.0' %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/REDCapR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/REDCapR/REDCapR_{{ version }}.tar.gz
-  sha256: 19c930f409bc8c70fe84e2c38ee52e29aaefbe13c669e33c58ee307a570da409
+  sha256: 9662a430dc3e6ec5218ade71b153114b82598894209a212cf3fbfde9c6f6d306
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -51,14 +51,10 @@ test:
     - "\"%R%\" -e \"library('REDCapR')\""  # [win]
 
 about:
-  home: https://ouhscbbmc.github.io/REDCapR/, https://github.com/OuhscBbmc/REDCapR, https://www.ouhsc.edu/bbmc/,
-    https://project-redcap.org
+  home: https://ouhscbbmc.github.io/REDCapR/, https://github.com/OuhscBbmc/REDCapR, https://www.ouhsc.edu/bbmc/, https://project-redcap.org
   license: MIT
-  summary: Encapsulates functions to streamline calls from R to the REDCap API.  REDCap (Research
-    Electronic Data CAPture) is a web application for building and managing online surveys
-    and databases developed at Vanderbilt University.  The Application Programming Interface
-    (API) offers an avenue to access and modify data programmatically, improving the
-    capacity for literate and reproducible programming.
+  summary: Encapsulates functions to streamline calls from R to the REDCap API.  REDCap (Research Electronic Data CAPture) is a web application for building and managing online surveys and databases developed at Vanderbilt University.  The Application Programming Interface (API) offers an avenue to access and modify data
+    programmatically, improving the capacity for literate and reproducible programming.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT

@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/REDCapR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/REDCapR/REDCapR_{{ version }}.tar.gz
-  sha256: 9662a430dc3e6ec5218ade71b153114b82598894209a212cf3fbfde9c6f6d306
+  sha256: 89f55d8c5c771622aadbac396d244ef5d2e5b6e94f661070b282da15315d67f6
 
 build:
   number: 0
